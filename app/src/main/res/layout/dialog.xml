@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="제작자"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="25dp"
+            android:text="이름 : 박슬빈"
+            android:textColor="@color/black"
+            android:gravity="center">
+        </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="25dp"
+        android:text="경성대학교 소프트웨어학과"
+        android:textColor="@color/black"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="25dp"
+        android:text="학번 : 2017848041"
+        android:textColor="@color/black"
+        android:gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="깃허브주소 : "></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="25dp"
+        android:text="https://github.com/slbin-park"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:autoLink="web"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="25dp"
+        android:text="발표일 : 2021-12-13"
+        android:textColor="@color/black"
+        android:gravity="center" />
+</LinearLayout>
