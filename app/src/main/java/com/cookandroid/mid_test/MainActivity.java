@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         private Context context;
 
         Integer[] Icon = { R.drawable.todo2, R.drawable.todo3,
-                R.drawable.todo4, R.drawable.todo5, R.drawable.todo7,
+                R.drawable.todo4, R.drawable.todo5, R.drawable.todo6,
                 R.drawable.todo7, R.drawable.todo8, R.drawable.todo9};
 
         public TodoListAdapter(List<Todo_list> todos,Context context){
@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
             single.setTitle(todo.getTitle());
             single.setContent(todo.getContent());
             single.setImge(Icon[todo.getId()]);
+            System.out.println(todo.getId());
             single.setDate(todo.getdate());
             System.out.println("날짜 : "+todo.getdate());
             single.setOnClickListener(new View.OnClickListener() {
@@ -131,19 +132,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
-
-//            TextView textview = new TextView(context);
-//            textview.setLayoutParams(new ViewGroup.LayoutParams(1000,300));
-//            textview.setPadding(1,3,1,3);
-//
-//            textview.setText(todo.getTitle());
-//            textview.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    System.out.println(todo.getContent());
-//                }
-//            });
-//            final int pos = position;
 
             return single;
         }

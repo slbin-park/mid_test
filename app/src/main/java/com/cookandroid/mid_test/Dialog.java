@@ -33,13 +33,14 @@ public class Dialog extends AppCompatActivity {
     }
 
     public void date_picker(View v){
+        Integer month = mDate.getMonth()+1;
         Todo_list todo = new Todo_list();
         todo.setTitle(edt1.getText().toString());
         todo.setContent(edt2.getText().toString());
         todo.setId(id);
         todo.setdate(mDate.getYear()
                 +"-"
-                +mDate.getMonth()
+                +month.toString()
                 +"-"
                 + mDate.getDayOfMonth());
         int a  = dbHelper.save(todo);

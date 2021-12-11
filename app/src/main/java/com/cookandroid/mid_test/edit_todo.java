@@ -51,13 +51,14 @@ public class edit_todo extends AppCompatActivity {
     }
 
     public void update(View v){
+        Integer month = date_picker.getMonth()+1;
         todo = new Todo_list();
         todo.setTitle(title.getText().toString());
         todo.setContent(content.getText().toString());
         todo.setId(id);
         todo.setdate(date_picker.getYear()
                 +"-"
-                +date_picker.getMonth()
+                +month.toString()
                 +"-"
                 + date_picker.getDayOfMonth());
         dbHelper.update(todo);
