@@ -1,5 +1,23 @@
-# mid_test
-Add file
+# 모바일 프로그래밍 Todo_List 어플
+# 폴더구조
+### ![image](https://user-images.githubusercontent.com/74503437/145686061-071245f1-bf63-4bbe-8a8c-73024d0e16fb.png)
+###
+### Dbhelper 데이터 베이스를 사용하기 위한 class
+### Dialog 할 일을 작성하기 위한 class
+### Edit_todo 할 일을 수정하기 위한 class
+### MainActivity 메인 화면 class
+### SingleItemView 데이터베이스에 저장된 데이터를 화면에 보여주기 위한 class
+### Todo_list 할 일을 저장 , 불러오기 위한 객체 class 
+### Drawble 간단한 아이콘 사진들
+
+###
+### Activity_main 메인 화면 xml
+### Second_page 할 일을 작성하는 화면 xml
+### Edit_todo_list 할 일을 수정하는 화면 xml
+### Dialog info화면을 구성하는 xml
+### Single_itme listview를 커스텀한 xml
+
+
 # 수정 내역 및 출처
 1. 화면 intent사용해서 이동하기 https://cpcp127.tistory.com/3
 2. 디비 사용 https://crazykim2.tistory.com/648
